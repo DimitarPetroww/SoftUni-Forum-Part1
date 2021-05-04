@@ -9,6 +9,7 @@ import { MainComponent } from './main/main.component';
 
 import { UserService } from './user.service';
 import { ThemeService } from './theme.service';
+import { PostService } from './post.service';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { ThemeService } from './theme.service';
     BrowserModule,
     HttpClientModule
   ],
-  providers: [UserService, ThemeService],
+  providers: [UserService, ThemeService, PostService],
   bootstrap: [AppComponent, HeaderComponent, FooterComponent]
 })
 export class AppModule { }
